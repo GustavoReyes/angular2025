@@ -1,0 +1,11 @@
+Nombre:<input
+  placeholder="Nombre"
+  type="text"
+  [(ngModel)]="nombre"
+/><br /><br />
+<button type="button" (click)="guardar()">Guardar</button>
+<button type="button" (click)="mostrar()">Mostrar</button>
+
+<div *ngIf="visible">
+  <h2 *ngFor="let n of agendaSinD">{{ n }}</h2>
+</div>
