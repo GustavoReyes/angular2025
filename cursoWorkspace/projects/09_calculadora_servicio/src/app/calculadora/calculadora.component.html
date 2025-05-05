@@ -1,0 +1,30 @@
+<div class="flex flex-col items-center m-4 p-6 rounded-lg shadow-lg">
+  <h1 class="text-2xl font-bold text-gray-600 mb-4">Calculadora</h1>
+  <label class="text-gray-600 font-medium mb-2">Número 1:</label>
+  <input
+    type="number"
+    [(ngModel)]="num1"
+    placeholder="Escribe número"
+    class="w-64 p-2 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400"
+  />
+  <label class="text-gray-600 font-medium mb-2">Número 2:</label>
+  <input
+    type="number"
+    [(ngModel)]="num2"
+    placeholder="Escribe número"
+    class="w-64 p-2 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400"
+  />
+  <input
+    type="button"
+    (click)="sumar()"
+    value="Sumar"
+    class="w-64 p-2 mb-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 cursor-pointer"
+  />
+  <input
+    type="button"
+    (click)="multiplicar()"
+    value="Multiplicar"
+    class="w-64 p-2 mb-4 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 cursor-pointer"
+  />
+  <div class="text-lg font-bold text-gray-700 mt-4">Resultado: {{ resultado }}</div>
+</div>
