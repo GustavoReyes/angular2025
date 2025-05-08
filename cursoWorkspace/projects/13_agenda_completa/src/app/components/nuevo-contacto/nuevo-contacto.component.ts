@@ -23,7 +23,6 @@ export class NuevoContactoComponent {
       let contacto = new Contacto(this.nombre, this.email, this.telefono);
       this.contactosService.guardar(contacto);
       alert("Contacto agregado exitosamente");
-      console.log(this.contactosService.arrayContacto);
       this.limpiar();
     }
   }

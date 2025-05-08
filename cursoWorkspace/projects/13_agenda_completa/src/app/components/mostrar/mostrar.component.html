@@ -5,6 +5,7 @@
         <th class="thclass">NOMBRE</th>
         <th class="thclass">EMAIL</th>
         <th class="thclass">TELÉFONO</th>
+        <th class="thclass">Eliminar</th>
       </tr>
     </thead>
     <tbody>
@@ -18,6 +19,7 @@
         <td class="px-4 py-2 border-gray-300 text-gray-700">
           {{ contacto.telefono }}
         </td>
+        <td><button (click)="eliminar(i)">Eliminar</button></td>
       </tr>
     </tbody>
   </table>

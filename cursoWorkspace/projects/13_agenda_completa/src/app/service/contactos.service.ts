@@ -18,4 +18,11 @@ export class ContactosService {
   mostrar():Contacto[]{
     return this.arrayContacto
   }
+  eliminar(i:number):void{
+    this.arrayContacto.splice(i,1)
+  }
 }
+
+//eliminar(e:number): void {
+//  this.agenda.splice(e, 1)
+//}

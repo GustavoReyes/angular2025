@@ -13,7 +13,17 @@ import { RouterModule } from '@angular/router';
 })
 export class MostrarComponent {
   contactos: Contacto[];
-  constructor(contactosService: ContactosService) {
-    this.contactos = contactosService.mostrar();
+  i:number;
+  constructor( private contactosService: ContactosService) {
+    this.contactos = this.contactosService.mostrar();
+  }
+  eliminar(i:number):void{
+    this.contactosService.eliminar(i)
   }
 }
+/*
+eliminar(){
+  this.contactos
+}
+
+*/
