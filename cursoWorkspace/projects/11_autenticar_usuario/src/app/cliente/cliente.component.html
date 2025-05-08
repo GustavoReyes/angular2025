@@ -1,0 +1,79 @@
+<div class="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md max-w-md mx-auto">
+  <!-- Sección de Validación -->
+  <section class="w-full mb-6">
+    <label class="block text-gray-700 font-medium mb-2">Usuario:</label>
+    <input
+      title="usuario"
+      type="text"
+      placeholder="Nombre de Usuario"
+      [(ngModel)]="usuario"
+      class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 mb-4"
+    />
+    <label class="block text-gray-700 font-medium mb-2">Contraseña:</label>
+    <input
+      title="contraseña"
+      type="password"
+      placeholder="Contraseña"
+      [(ngModel)]="password"
+      class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 mb-4"
+    />
+    <button
+      (click)="validar()"
+      type="button"
+      title="Validar"
+      class="w-full bg-blue-500 text-white font-semibold py-2 rounded-lg hover:bg-blue-600 transition duration-300"
+    >
+      Validar
+    </button>
+    <span
+      (click)="registrarse()"
+      class="block text-blue-500 text-center mt-4 cursor-pointer hover:underline"
+    >
+      Registrarse
+    </span>
+  </section>
+
+  <!-- Sección de Registro -->
+  <section *ngIf="visible" class="w-full p-4 bg-white rounded-lg shadow-md">
+    <label class="block text-gray-700 font-medium mb-2">Usuario:</label>
+    <input
+      title="usuario"
+      type="text"
+      placeholder="Nombre de Usuario"
+      [(ngModel)]="usuario"
+      class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 mb-4"
+    />
+    <label class="block text-gray-700 font-medium mb-2">Contraseña:</label>
+    <input
+      title="contraseña"
+      type="password"
+      placeholder="Contraseña"
+      [(ngModel)]="password"
+      class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 mb-4"
+    />
+    <label class="block text-gray-700 font-medium mb-2">Email:</label>
+    <input
+      title="email"
+      type="email"
+      placeholder="Email"
+      [(ngModel)]="email"
+      class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 mb-4"
+    />
+    <label class="block text-gray-700 font-medium mb-2">Teléfono:</label>
+    <input
+      title="telefono"
+      type="text"
+      placeholder="Teléfono"
+      [(ngModel)]="telefono"
+      class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 mb-4"
+    />
+    <button
+      (click)="registrar()"
+      type="button"
+      title="Registrar"
+      class="w-full bg-green-500 text-white font-semibold py-2 rounded-lg hover:bg-green-600 transition duration-300"
+    >
+      Registrar
+    </button>
+  </section>
+</div>

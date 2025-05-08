@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer components {
+  .thclass {
+    padding-inline: 16px;
+    padding-block: 8px;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  .tdclass {
+    padding-inline: 16px;
+    padding-block: 8px;
+    text-align: center;
+    border-color: #d1d5dc;
+    color:#364153;
+  }
+
+
+
+}
+
+/* //px-4 py-2 border-t border-gray-300 text-gray-700" */

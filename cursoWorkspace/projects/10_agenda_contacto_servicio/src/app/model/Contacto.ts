@@ -1,4 +1,3 @@
-2
 export class Contacto{
   nombre:string;
   email:string;

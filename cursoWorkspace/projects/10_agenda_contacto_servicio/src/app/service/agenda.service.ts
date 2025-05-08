@@ -1,6 +1,10 @@
-import { Contacto } from "../model/Contacto";
+import { Injectable } from '@angular/core';
+import { Contacto } from '../model/Contacto';
 
-export class AgendaService{
+@Injectable({
+  providedIn: 'root'
+})
+export class AgendaService {
   agenda:Contacto[]=[];
   guardar(contacto:Contacto):void{
     this.agenda.push(contacto);
@@ -11,4 +15,6 @@ export class AgendaService{
   recuperar():Contacto[]{
     return this.agenda;
   }
-}
+
+  constructor() { }
+} 

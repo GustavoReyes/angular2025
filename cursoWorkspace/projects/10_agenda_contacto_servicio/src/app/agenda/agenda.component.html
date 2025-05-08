@@ -1,19 +1,39 @@
-<div class="flex flex-col p-2 max-w-xl mx-auto mt-10 bg-gray-300 rounded-lg">
-  <span class="mt-5 ml-3 text-xl font-bold">Nombre:</span><input
-    class="m-3 border-1 rounded-md border-blue-800"
+<div
+  class="flex flex-col p-2 max-w-xl mx-auto mt-10 shadow-2xl bg-gray-50 rounded-xl"
+>
+  <span class="mt-5 ml-3 text-xl font-bold">Nombre:</span
+  ><input
+    class="m-3 border-1 rounded-md border-blue-800 text-2xl font-bold"
     title="nombre"
     type="text"
     [(ngModel)]="nombre"
-  /><br /><br />
-  <span class="ml-3 text-xl font-bold">Email:</span><input
-    class="m-3 border-1 rounded-md border-blue-800"
+  /><br />
+  <span class="ml-3 text-xl font-bold">Email:</span
+  ><input
+    class="m-3 border-1 rounded-md border-blue-800 text-2xl font-bold"
     title="email"
     type="text"
     [(ngModel)]="email"
-  /><br /><br />
-  <span class="ml-3 text-xl font-bold">Teléfono:</span><input class="m-3 border-1 rounded-md border-blue-800" title="tel" type="text" [(ngModel)]="telefono" /><br /><br />
-  <button class="px-5 py-2 text-white shadow-l bg-blue-900 rounded-2xl m-5 shadow-sm" (click)="guardar()">Guardar</button>
-  <button class="px-5 py-2 text-white shadow-l bg-red-900 rounded-2xl m-5 shadow-sm"(click)="mostrar()">Mostrar</button><br /><br />
+  /><br />
+  <span class="ml-3 text-xl font-bold">Teléfono:</span>
+  <input
+    class="m-3 border-1 rounded-md border-blue-800 text-2xl font-bold appearance-none"
+    title="tel"
+    type="number"
+    [(ngModel)]="telefono"
+  /><br />
+  <button
+    class="m-5 px-5 py-2 text-white shadow-md rounded-xl cursor-pointer bg-blue-800"
+    (click)="guardar()"
+  >
+    Guardar
+  </button>
+  <button
+    class="m-5 px-5 py-2 text-white shadow-sm rounded-xl cursor-pointer bg-red-800"
+    (click)="mostrar()"
+  >
+    Mostrar
+  </button>
   <table border="1" *ngIf="contactos">
     <tr>
       <th>Nombre</th>

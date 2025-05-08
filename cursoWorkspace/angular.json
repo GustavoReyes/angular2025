@@ -625,6 +625,273 @@
           }
         }
       }
+    },
+    "11_autenticar_usuario": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/11_autenticar_usuario",
+      "sourceRoot": "projects/11_autenticar_usuario/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/11_autenticar_usuario",
+            "index": "projects/11_autenticar_usuario/src/index.html",
+            "browser": "projects/11_autenticar_usuario/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/11_autenticar_usuario/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/11_autenticar_usuario/public"
+              }
+            ],
+            "styles": [
+              "projects/11_autenticar_usuario/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "11_autenticar_usuario:build:production"
+            },
+            "development": {
+              "buildTarget": "11_autenticar_usuario:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/11_autenticar_usuario/tsconfig.spec.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/11_autenticar_usuario/public"
+              }
+            ],
+            "styles": [
+              "projects/11_autenticar_usuario/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "12_validacion_routing": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/12_validacion_routing",
+      "sourceRoot": "projects/12_validacion_routing/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/12_validacion_routing",
+            "index": "projects/12_validacion_routing/src/index.html",
+            "browser": "projects/12_validacion_routing/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/12_validacion_routing/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/12_validacion_routing/public"
+              }
+            ],
+            "styles": [
+              "projects/12_validacion_routing/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "12_validacion_routing:build:production"
+            },
+            "development": {
+              "buildTarget": "12_validacion_routing:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/12_validacion_routing/tsconfig.spec.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/12_validacion_routing/public"
+              }
+            ],
+            "styles": [
+              "projects/12_validacion_routing/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "13_agenda_completa": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/13_agenda_completa",
+      "sourceRoot": "projects/13_agenda_completa/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/13_agenda_completa",
+            "index": "projects/13_agenda_completa/src/index.html",
+            "browser": "projects/13_agenda_completa/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/13_agenda_completa/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/13_agenda_completa/public"
+              }
+            ],
+            "styles": [
+              "projects/13_agenda_completa/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "13_agenda_completa:build:production"
+            },
+            "development": {
+              "buildTarget": "13_agenda_completa:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/13_agenda_completa/tsconfig.spec.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/13_agenda_completa/public"
+              }
+            ],
+            "styles": [
+              "projects/13_agenda_completa/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
     }
   },
   "cli": {
