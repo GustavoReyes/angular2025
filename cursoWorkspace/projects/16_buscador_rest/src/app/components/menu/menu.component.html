@@ -1,0 +1,23 @@
+<section class="flex my-6 max-w-xl mx-auto min-w-440px">
+  <div class="flex items-center gap-20 mx-auto">
+    <a
+      class="button_menu bg-green-600 shadow-xl/20"
+      [routerLink]="['/buscar']"
+      routerLinkActive="router-link-active"
+      >BUSCAR</a
+    >
+    <a
+      class="button_menu bg-blue-600 shadow-xl/20"
+      [routerLink]="['/alta']"
+      routerLinkActive="router-link-active"
+      >ALTA</a
+    >
+    <a
+      class="button_menu bg-red-600 shadow-xl/20"
+      [routerLink]="['/eliminar']"
+      routerLinkActive="router-link-active"
+      >ELIMINAR</a
+    >
+  </div>
+</section>
+<router-outlet> </router-outlet>
