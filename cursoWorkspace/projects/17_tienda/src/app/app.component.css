@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@layer components {
+  .button_menu {
+    text-align: center;
+    width: 96px;
+    padding-inline: 8px;
+    padding-block: 12px;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    font-size: 0.75rem;
+  }
+}

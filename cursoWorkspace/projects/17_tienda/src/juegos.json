@@ -1,0 +1,165 @@
+{
+  "categorias": [
+    {
+      "id": "1",
+      "nombre": "familiar",
+      "descripcion": "Juegos para toda la familia"
+    },
+    {
+      "id": "2",
+      "nombre": "estrategia",
+      "descripcion": "Juegos de planificación y estrategia"
+    },
+    {
+      "id": "3",
+      "nombre": "party",
+      "descripcion": "Juegos para fiestas y grupos grandes"
+    },
+    {
+      "id": "4",
+      "nombre": "abstracto",
+      "descripcion": "Juegos de lógica y pensamiento abstracto"
+    },
+    {
+      "id": "5",
+      "nombre": "euro",
+      "descripcion": "Juegos de estilo europeo"
+    },
+    {
+      "id": "6",
+      "nombre": "cartas",
+      "descripcion": "Juegos basados en cartas"
+    },
+    {
+      "id": "7",
+      "nombre": "dados",
+      "descripcion": "Juegos basados en dados"
+    },
+    {
+      "id": "8",
+      "nombre": "economico",
+      "descripcion": "Juegos de gestión económica"
+    },
+    {
+      "id": "9",
+      "nombre": "deduccion",
+      "descripcion": "Juegos de deducción y misterio"
+    },
+    {
+      "id": "10",
+      "nombre": "filler",
+      "descripcion": "Juegos cortos y ligeros"
+    }
+  ],
+  "productos": [
+    {
+      "codigo": "P001",
+      "nombre": "Catan Edición Base",
+      "precio": 45.99,
+      "stock": 10,
+      "categoria": "familiar",
+      "descripcion": "El juego de mesa más vendido",
+      "imagen": "catan.jpg"
+    },
+    {
+      "codigo": "P002",
+      "nombre": "Pandemic",
+      "precio": 39.99,
+      "stock": 15,
+      "categoria": "estrategia",
+      "descripcion": "Salva al mundo de las enfermedades",
+      "imagen": "pandemic.jpg"
+    },
+    {
+      "codigo": "P003",
+      "nombre": "Azul",
+      "precio": 34.99,
+      "stock": 8,
+      "categoria": "abstracto",
+      "descripcion": "Diseña los azulejos más bellos",
+      "imagen": "azul.jpg"
+    },
+    {
+      "codigo": "P004",
+      "nombre": "Exploding Kittens",
+      "precio": 19.99,
+      "stock": 20,
+      "categoria": "cartas",
+      "descripcion": "El juego de cartas más explosivo",
+      "imagen": "exploding-kittens.jpg"
+    },
+    {
+      "codigo": "P005",
+      "nombre": "Wingspan",
+      "precio": 59.99,
+      "stock": 5,
+      "categoria": "euro",
+      "descripcion": "Colecciona las aves más hermosas",
+      "imagen": "wingspan.jpg"
+    },
+    {
+      "codigo": "P006",
+      "nombre": "Codenames",
+      "precio": 24.99,
+      "stock": 12,
+      "categoria": "party",
+      "descripcion": "El mejor juego para fiestas",
+      "imagen": "codenames.jpg"
+    },
+    {
+      "codigo": "P007",
+      "nombre": "Root",
+      "precio": 69.99,
+      "stock": 7,
+      "categoria": "estrategia",
+      "descripcion": "Guerra en el bosque",
+      "imagen": "root.jpg"
+    },
+    {
+      "codigo": "P008",
+      "nombre": "Cascadia",
+      "precio": 39.99,
+      "stock": 9,
+      "categoria": "familiar",
+      "descripcion": "Construye tu propio ecosistema",
+      "imagen": "cascadia.jpg"
+    },
+    {
+      "codigo": "P009",
+      "nombre": "Time's Up",
+      "precio": 29.99,
+      "stock": 15,
+      "categoria": "party",
+      "descripcion": "El juego de las películas y famosos",
+      "imagen": "times-up.jpg"
+    },
+    {
+      "codigo": "P010",
+      "nombre": "Scout",
+      "precio": 14.99,
+      "stock": 25,
+      "categoria": "cartas",
+      "descripcion": "El juego de cartas táctico",
+      "imagen": "scout.jpg"
+    },
+    {
+      "id": "416d",
+      "codigo": "P011",
+      "nombre": "Libro",
+      "precio": 55,
+      "categoria": "8"
+    },
+    {
+      "id": "8791",
+      "codigo": "P011",
+      "nombre": "Libro",
+      "precio": 44
+    },
+    {
+      "id": "7dca",
+      "codigo": "P011",
+      "nombre": "libro",
+      "precio": 44
+    }
+  ]
+}
