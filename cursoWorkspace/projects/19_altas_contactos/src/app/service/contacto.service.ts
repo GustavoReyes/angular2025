@@ -18,6 +18,6 @@ export class ContactoService {
   alta(contacto: Contacto): Observable<boolean> {
     return this.http.post(this.url + 'alta', contacto)
       .pipe(map(() => true),
-        catchError(e => of(false)))
+        catchError(_e => of(false)))
   }
 }

@@ -1,0 +1,16 @@
+<div class="max-w-xl mx-auto bg-white p-6 rounded-xl shadow">
+  <nav class="flex justify-center gap-8 mb-8">
+    <a [routerLink]="['/catalogo']" routerLinkActive="text-blue-600 border-b-2 border-blue-600"
+      class="text-gray-700 font-semibold px-4 py-2 transition hover:text-blue-600">
+      Catálogo de libros
+    </a>
+    <a [routerLink]="['/compras']" routerLinkActive="text-blue-600 border-b-2 border-blue-600"
+      class="text-gray-700 font-semibold px-4 py-2 transition hover:text-blue-600">
+      Mis compras
+    </a>
+  </nav>
+  <router-outlet>
+    <app-log-in></app-log-in>
+  </router-outlet>
+
+</div>

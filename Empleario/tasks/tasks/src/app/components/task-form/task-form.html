@@ -1,0 +1,12 @@
+<div>
+  <h2>{{ editing ? "Editar Tarea" : "Agregar Nueva Tarea" }}</h2>
+  <input [(ngModel)]="taskTitle" type="text" placeholder="Título" />
+  <input [(ngModel)]="taskDesc" type="text" placeholder="Descripción" />
+  <input
+    [(ngModel)]="taskDetail"
+    type="text"
+    placeholder="Información Detallada"
+  />
+  <button (click)="save()">{{ editing ? "Guardar" : "Agregar" }}</button>
+  <button (click)="cancel()">Cancelar</button>
+</div>

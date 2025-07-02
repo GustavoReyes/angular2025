@@ -1,0 +1,6 @@
+<div *ngIf="task">
+  <h2>{{ task.title }}</h2>
+  <p><strong>Descripción:</strong> {{ task.description }}</p>
+  <p *ngIf="task.infoTask"><strong>Información detallada:</strong> {{ task.infoTask }}</p>
+  <a [routerLink]="['/tasks']">Volver a la lista</a>
+</div>

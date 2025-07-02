@@ -1,0 +1,58 @@
+import { Movie } from "./movie";
+
+export class Movies {
+    movies: Movie[] = [];
+    movieId: number = 1;
+
+    generateNextId() {
+        return this.movieId++;
+    }
+
+    allMovies(){
+        return this.movies;
+    }
+
+    moviesPorId(id: number): Movie | undefined {
+        return this.movies.find(m => m.id === id);
+    }
+
+    agragarMovie(movie: { title: any; year: any; director: any; duration: any; genres: any; rate: any; }) {
+        const nuevaMovie = {
+            id: this.generateNextId(),
+            title: movie.title,
+            year: movie.year,
+            director: movie.director,
+            duration: movie.duration,
+            genres: movie.genres,
+            rate: movie.rate
+        };
+        this.movies.push(nuevaMovie);
+        return nuevaMovie;
+    }
+
+
+    actualizar(id: number, data: { title: string | undefined; year: number | undefined; director: string | undefined; duration: number | undefined; genres: string[] | undefined; rate: number | undefined; }) {
+        for (let i = 0; i < this.movies.length; i++) {
+            if (this.movies[i].id === id) {
+                if (data.title !== undefined) this.movies[i].title = data.title;
+                if (data.year !== undefined) this.movies[i].year = data.year;
+                if (data.director !== undefined) this.movies[i].director = data.director;
+                if (data.duration !== undefined) this.movies[i].duration = data.duration;
+                if (data.genres !== undefined) this.movies[i].genres = data.genres;
+                if (data.rate !== undefined) this.movies[i].rate = data.rate;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    eliminar(id: number) {
+        for (let i = 0; i < this.movies.length; i++) {
+            if (this.movies[i].id === id) {
+                this.movies.splice(i, 1);
+                return true;
+            }
+        }
+        return false;
+    }
+}
