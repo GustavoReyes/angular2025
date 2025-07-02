@@ -1,0 +1,65 @@
+<div class="flex items-center justify-center bg-gray-100 py-12">
+  <form
+    class="bg-white p-8 rounded-lg shadow-md w-full max-w-sm"
+    #flogin="ngForm"
+    name="flogin"
+  >
+    <h2 class="text-2xl font-bold mb-6 text-center text-gray-700">
+      Iniciar Sesión
+    </h2>
+    <div class="mb-4">
+      <label class="block text-gray-700 font-semibold mb-2" for="usuario">Usuario:</label>
+      <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition" 
+      
+        title="usuario"
+        id="us"
+        type="text"
+        name="us"
+        #usuarioP="ngModel"
+        [(ngModel)]="usuario"
+        minlength="3"
+        required="true"
+      />
+      <p *ngIf="usuarioP.invalid && usuarioP.touched">usuario no válido</p>
+    </div>
+    <div class="mb-6">
+    <label class="block text-gray-700 font-semibold mb-2" for="password">Contraseña:</label>
+    <input
+      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+      title="Pass"
+      id="pass"
+      name="pass"
+      type="password"
+      #passwordP="ngModel"
+      [(ngModel)]="password"
+      required="true"
+    />
+</div>
+    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition" type="button" (click)="login(flogin)">Validar</button>
+  </form>
+  <div>
+    {{ mensaje }}
+  </div>
+</div>
+
+<!-- <div class="flex items-center justify-center bg-gray-100 py-12">
+  <form class="bg-white p-8 rounded-lg shadow-md w-full max-w-sm">
+    <h2 class="text-2xl font-bold mb-6 text-center text-gray-700">Iniciar Sesión</h2>
+    <div class="mb-4">
+      <label for="usuario" class="block text-gray-700 font-semibold mb-2">Usuario</label>
+      <input type="text" id="usuario" name="usuario" [(ngModel)]="usuario"
+        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition" required>
+    </div>
+    <div class="mb-6">
+      <label for="password" class="block text-gray-700 font-semibold mb-2">Contraseña</label>
+      <input type="password" id="password" name="password" [(ngModel)]="password"
+        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition" required>
+    </div>
+    <button type="submit" (click)="logIn()"
+      class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition">
+      Ingresar
+    </button>
+    <div>{{mensaje}}</div>
+  </form>
+</div>
+ -->

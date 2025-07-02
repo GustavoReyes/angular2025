@@ -1,9 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { Contacto } from '../../model/Contacto';
 import { ContactoService } from '../../service/contacto.service';
-import { throwIfEmpty } from 'rxjs';
 
 @Component({
   selector: 'app-alta',
