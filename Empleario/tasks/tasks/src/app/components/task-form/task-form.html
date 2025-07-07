@@ -10,3 +10,8 @@
   <button (click)="save()">{{ editing ? "Guardar" : "Agregar" }}</button>
   <button (click)="cancel()">Cancelar</button>
 </div>
+<form action="" method="post" [hidden]="!editing" #taskForm>
+  <input type="hidden" name="title" [value]="taskTitle" />
+  <input type="hidden" name="description" [value]="taskDesc" />
+  <input type="hidden" name="taskDetail" [value]="taskDetail" />
+</form>
